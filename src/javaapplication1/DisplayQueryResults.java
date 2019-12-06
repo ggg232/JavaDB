@@ -54,6 +54,7 @@ public class DisplayQueryResults extends JFrame
          final JTextArea queryArea2 = new JTextArea(DEFAULT_QUERY2, 3, 100);
          queryArea2.setWrapStyleWord(true);
          queryArea2.setLineWrap(true);
+         queryArea2.setBackground(Color.CYAN);
          
          JScrollPane scrollPane = new JScrollPane(queryArea,
             ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED, 
@@ -61,7 +62,7 @@ public class DisplayQueryResults extends JFrame
          JScrollPane scrollPane2 = new JScrollPane(queryArea2,
             ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED, 
             ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-         
+   
          // set up JButton for submitting queries
          JButton submitButton = new JButton("Submit Query");
          JButton submitButton2 = new JButton("Submit Query");
@@ -255,7 +256,7 @@ public class DisplayQueryResults extends JFrame
          window.setVisible(true);
         // window2.setDefaultCloseOperation(EXIT_ON_CLOSE);
          Container ct = window2.getContentPane();
-         ct.setBackground(Color.green);
+         ct.setBackground(Color.GREEN);
          window2.setSize(500, 250);
          window2.setLocation(500, 0);
          window2.setVisible(true); 
